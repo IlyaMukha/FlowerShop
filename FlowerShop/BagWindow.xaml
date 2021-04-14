@@ -1,0 +1,25 @@
+﻿<Window x:Class="FlowerShop.BagWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShop"
+        mc:Ignorable="d"
+        Title="BagWindow" Height="450" Width="800" Icon="lotus.png" Background="#EF9A9A">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"></RowDefinition>
+            <RowDefinition Height="296*"></RowDefinition>
+            <RowDefinition Height="61*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1" Background="#FF8882">
+            <WrapPanel Orientation="Horizontal" Margin="10" Name="MyPanel">
+
+            </WrapPanel>
+        </ScrollViewer>
+        <Label Grid.Row="0" Content="Корзина:" FontSize="30"></Label>
+        <Label Grid.Row="2" Content="" FontSize="30" Name="Count" Margin="265,0,352,0"/>
+        <Label Grid.Row="2" FontSize="30" Name="Count1" Content="Заказ на cумму:" Margin="10,0,527,0"></Label>
+        <Button Command="New" Content="Оформить заказ" HorizontalAlignment="Left" Margin="445,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="337" Height="41" Name="Send" Background="White" Foreground="#FF8882" FontSize="25"/>
+    </Grid>
+</Window>
